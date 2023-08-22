@@ -61,7 +61,7 @@ end
 
 function love.mousereleased(x, y, button, istouch)
 	if button == 1 then
-		local k = 5
+		local k = 1
 		v_x = k * (x_press - x)
 		v_y = k * (y_press - y)
 	end
