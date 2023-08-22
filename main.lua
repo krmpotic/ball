@@ -15,6 +15,9 @@ function love.draw()
 	local x, y = love.mouse.getPosition()
 	love.graphics.draw(b, b_x, b_y)
 
+	if love.mouse.isDown(1) then
+		love.graphics.line(x,y,x_press,y_press)
+	end
 	if love.mouse.isDown(2) then
 		love.graphics.line(x,y,b_x+b_w/2,b_y+b_h/2)
 	end
